@@ -1,0 +1,15 @@
+[
+  "weather_temperature_c",
+  "weather_humidity_pct",
+  "weather_rain_mm",
+  "weather_wind_speed",
+  "weather_radiation_source_value",
+  "soil_temperature_surface_c",
+  "soil_temperature_deep_c",
+  "soil_moisture_pct",
+  "water_volume_past_4h_l",
+  "month",
+  "hour",
+  "day_period",
+  "zone_id"
+]

@@ -1,0 +1,32 @@
+{
+  "model_type": "Physics-Informed Ridge(alpha=500.0)",
+  "features": [
+    "weather_temperature_c",
+    "weather_humidity_pct",
+    "soil_temperature_surface_c",
+    "soil_moisture_pct",
+    "weather_radiation_source_value",
+    "weather_radiation_source_value_roll_mean_6h",
+    "weather_wind_speed"
+  ],
+  "coefficients": {
+    "weather_temperature_c": 0.04089922309176379,
+    "weather_humidity_pct": 0.0012888664539927408,
+    "soil_temperature_surface_c": -0.05758371403282584,
+    "soil_moisture_pct": -0.0013081891015899823,
+    "weather_radiation_source_value": 0.0003212768038644809,
+    "weather_radiation_source_value_roll_mean_6h": -0.0006784681827845117,
+    "weather_wind_speed": -0.0022875741173967266
+  },
+  "intercept": 0.5085407498197118,
+  "validation": {
+    "mae": 0.29408864636508886,
+    "rmse": 0.511680737284695,
+    "r2": 0.9364927219169107
+  },
+  "test": {
+    "mae": 0.2980077145505386,
+    "rmse": 0.717416886607152,
+    "r2": 0.8517367855727769
+  }
+}

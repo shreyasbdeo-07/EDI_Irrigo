@@ -1,0 +1,20 @@
+{
+  "_comment": "Example HTTP POST body sent by ESP32 to POST /sensor-push",
+  "_endpoint": "http://<backend-ip>:8000/sensor-push",
+  "_method": "POST",
+  "_content_type": "application/json",
+
+  "soil_moisture_pct":      34.5,
+  "soil_temperature_c":     22.3,
+  "air_temperature_c":      28.7,
+  "humidity_pct":           65.0,
+  "forecast_rainfall_mm":   1.2,
+  "forecast_temperature_c": 30.1,
+  "wind_speed_mps":         2.4,
+  "solar_radiation":        520.0,
+  "water_volume_past_4h_l": 0.0,
+  "crop_type":              "tomato",
+  "growth_stage":           "mid_season",
+  "device_id":              "esp32-zone1-001",
+  "zone_id":                1
+}

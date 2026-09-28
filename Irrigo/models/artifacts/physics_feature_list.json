@@ -1,0 +1,9 @@
+[
+  "weather_temperature_c",
+  "weather_humidity_pct",
+  "soil_temperature_surface_c",
+  "soil_moisture_pct",
+  "weather_radiation_source_value",
+  "weather_radiation_source_value_roll_mean_6h",
+  "weather_wind_speed"
+]

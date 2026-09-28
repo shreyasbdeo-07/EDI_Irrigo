@@ -1,0 +1,102 @@
+{
+  "generated_at": "2026-09-18T00:20:30.465116",
+  "dataset": "D:\\SEMESTER 3\\EDI PROJECT\\tomato_open_field_ml_dataset.csv",
+  "target": "target_mean_soil_moisture_24h_pct",
+  "n_train": 15021,
+  "n_val": 3219,
+  "n_test": 3220,
+  "train_target_mean": 33.0325,
+  "val_target_mean": 17.8692,
+  "test_target_mean": 17.1954,
+  "distribution_shift_note": "Train mean and val/test mean differ by ~15pp due to seasonal dry-period. Evaluate by MAE; R\u00b2 is bounded by this shift.",
+  "baseline_ols_per_zone": {
+    "features_used": [
+      "soil_moisture_pct (per zone)"
+    ],
+    "coefficients": {
+      "1": {
+        "intercept": 7.169529276190744,
+        "slope": 0.802926902007933
+      },
+      "2": {
+        "intercept": 3.0936735219285123,
+        "slope": 0.886697904171747
+      }
+    },
+    "val": {
+      "mae": 2.174055,
+      "rmse": 2.410626,
+      "r2": -0.409565
+    },
+    "test": {
+      "mae": 2.304771,
+      "rmse": 2.559162,
+      "r2": -0.886626
+    }
+  },
+  "random_forest": {
+    "n_estimators": 300,
+    "max_features": "sqrt",
+    "min_samples_leaf": 4,
+    "features_used": [
+      "weather_temperature_c",
+      "weather_humidity_pct",
+      "weather_rain_mm",
+      "weather_wind_speed",
+      "weather_radiation_source_value",
+      "soil_temperature_surface_c",
+      "soil_temperature_deep_c",
+      "soil_moisture_pct",
+      "water_volume_past_4h_l",
+      "month",
+      "hour",
+      "day_period",
+      "zone_id"
+    ],
+    "feature_importances": {
+      "weather_temperature_c": 0.025412,
+      "weather_humidity_pct": 0.010734,
+      "weather_rain_mm": 0.000271,
+      "weather_wind_speed": 0.008171,
+      "weather_radiation_source_value": 0.008555,
+      "soil_temperature_surface_c": 0.040733,
+      "soil_temperature_deep_c": 0.102382,
+      "soil_moisture_pct": 0.461316,
+      "water_volume_past_4h_l": 0.066932,
+      "month": 0.22513,
+      "hour": 0.002674,
+      "day_period": 0.005143,
+      "zone_id": 0.042548
+    },
+    "zone_metrics_val": {
+      "zone_1": {
+        "mae": 1.279567,
+        "rmse": 1.324654
+      },
+      "zone_2": {
+        "mae": 2.525783,
+        "rmse": 3.773354
+      }
+    },
+    "zone_metrics_test": {
+      "zone_1": {
+        "mae": 3.604212,
+        "rmse": 4.640821
+      },
+      "zone_2": {
+        "mae": 3.927627,
+        "rmse": 5.158864
+      }
+    },
+    "val": {
+      "mae": 1.972167,
+      "rmse": 2.948316,
+      "r2": -1.108499
+    },
+    "test": {
+      "mae": 3.783999,
+      "rmse": 4.935518,
+      "r2": -6.017069
+    }
+  }
+}

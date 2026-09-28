@@ -1,0 +1,58 @@
+{
+  "scaler_type": "StandardScaler",
+  "fitted_on_rows": 15021,
+  "features": {
+    "weather_temperature_c": {
+      "mean": 25.334966,
+      "std": 6.475927
+    },
+    "weather_humidity_pct": {
+      "mean": 55.293462,
+      "std": 19.71731
+    },
+    "weather_rain_mm": {
+      "mean": 0.030321,
+      "std": 0.187959
+    },
+    "weather_wind_speed": {
+      "mean": 12.594694,
+      "std": 6.094788
+    },
+    "weather_radiation_source_value": {
+      "mean": 264.422556,
+      "std": 271.608289
+    },
+    "soil_temperature_surface_c": {
+      "mean": 27.710155,
+      "std": 7.790984
+    },
+    "soil_temperature_deep_c": {
+      "mean": 25.982205,
+      "std": 5.968309
+    },
+    "soil_moisture_pct": {
+      "mean": 33.312485,
+      "std": 15.779637
+    },
+    "water_volume_past_4h_l": {
+      "mean": 14.541881,
+      "std": 35.071149
+    },
+    "month": {
+      "mean": 6.49058,
+      "std": 1.617343
+    },
+    "hour": {
+      "mean": 11.776247,
+      "std": 6.103663
+    },
+    "day_period": {
+      "mean": 1.268557,
+      "std": 1.160298
+    },
+    "zone_id": {
+      "mean": 1.555888,
+      "std": 0.496867
+    }
+  }
+}
